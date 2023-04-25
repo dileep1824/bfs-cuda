@@ -16,7 +16,7 @@ void simpleBfs(int N, int level, int *d_adjacencyList, int *d_edgesOffset,
             int v = d_adjacencyList[i];
             if (level + 1 < d_distance[v]) {
                 d_distance[v] = level + 1;
-                d_parent[v] = i;
+                d_parent[v] = u;
                 valueChange = 1;
             }
         }
